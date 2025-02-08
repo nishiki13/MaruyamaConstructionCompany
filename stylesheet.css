@@ -1,0 +1,393 @@
+/* 共通CSS-------------------------------------------- */
+body {
+  margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.wrapper-title {
+  color: black;
+  font-size: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn {
+  font-size: 30px;
+  padding: 8px 25px;
+  border-radius: 25px;
+  background: #000080;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+}
+
+.btn-mother {
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #0bd;
+}
+
+
+/* ヘッダー-------------------------------------------- */
+.header-flex {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+
+/* ヘッダーロゴ */
+.header-left img {
+  width: 84px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* ヘッダー右 */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* ヘッダーグローバルメニュー */
+.main-nav {
+  display: flex;
+}
+
+.main-nav a {
+  padding: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000080;
+}
+
+.main-nav a:hover {
+  color: #0bd;
+}
+
+/* ハンバーガーメニュー */
+/* ハンバーガーメニュー (大、中レイアウトでは非表示)
+=============*/
+.burger {
+  margin: 0px;
+  padding: 20px 20px;
+  width: 60px;
+  height: 60px;
+  background-image: url(img/burger.svg);
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-radius: 6px;
+  z-index: 2;
+  display: none;
+}
+
+.burger:hover {
+  background-color: lightgray;
+}
+
+.burger.is-active {
+  background-image: url(img/close.svg);
+}
+
+/* ハンバーガーメニューを開いたときの画面 */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  display: none;
+}
+
+.menu.is-active {
+  display: flex;
+}
+
+.menu li a {
+  font-size: 40px;
+  color: #ffffff;
+  padding: 10px 0px;
+}
+
+.menu li a:hover {
+  color: dimgray;
+}
+
+/* トップ-------------------------------------------- */
+.top {
+  max-width: 1440px;
+  height: 560px;
+  background-image: url("img/top.png");
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.top-wrapper-textbox {
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  width: 531px;
+  height: 240px;
+  padding: 10px;
+  opacity: 0.90;
+  background: white;
+  text-align: center;
+}
+
+.top-wrapper-textbox p {
+  margin: 0;
+}
+
+.top-wrapper-big-text {
+  font-size: 48px;
+}
+
+.top-wrapper-small-text {
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+/* スライドショーslick
+.slider {
+  visibility: hidden;
+}
+
+.slider.slick-initialized {
+  visibility: visible;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+} */
+
+
+/* 当社について-------------------------------------------- */
+/* 写真とテキストを横並び */
+.about-flex {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about img {
+  width: 480px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* テキストとボタンを縦並び */
+.about-flex-column {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-text {
+  font-size: 20px;
+}
+
+/* できること-------------------------------------------- */
+.work-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.work-unit {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.work-unit-title {
+  font-size: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.work-unit-responsive img {
+  width: 320px;
+  height: 232px;
+  object-fit: cover;
+}
+
+.work-unit-text {
+  font-size: 20px;
+  overflow-wrap: break-word;
+  align-items: flex-start;
+}
+
+/* お客様の声-------------------------------------------- */
+/* お客様の声横並び */
+.voice-flex {
+  display: flex;
+  gap: 40px;
+}
+
+/* お客様の声とボタン縦並び */
+.voice-flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.voice-unit {
+  width: 480px;
+}
+
+/* お客様の声テキストと写真横並び */
+.voice-unit-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.voice-unit img {
+  width: 480px;
+  height: 300px;
+}
+
+.voice-unit-text {
+  font-size: 20px;
+  overflow-wrap: break-word;
+}
+
+.voice-icon img {
+  width: 100px;
+  height: 100px;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+.voice-icon-text p {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* 個別相談会-------------------------------------------- */
+.consaltation-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.consaltation-left {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.consaltation-left img {
+  width: 480px;
+  height: 300px;
+}
+
+.consaltation-left-text p {
+  font-size: 20px;
+}
+
+.consaltation-right {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.consaltation-right p {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* フッター-------------------------------------------- */
+.footer-main-nav {
+  display: flex;
+}
+
+.footer-main-nav a {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000080;
+}
+
+.footer-main-nav a:hover {
+  color: #0bd;
+}
+
+.selected {
+  align-self: center;
+}
+
+.btn2 {
+  display: none;
+  padding: 10px 15px;
+  background-color: #000080;
+  color: white;
+  border-radius: 20%;
+  cursor: pointer;
+}

@@ -1,0 +1,174 @@
+/* 中レイアウト
+===========================================================================================================================================================*/
+@media (max-width: 1000px) {
+
+  /* 共通CSS-------------------------------------------- */
+  .container {
+    max-width: 600px;
+  }
+
+  .wrapper-title {
+    color: black;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /* ヘッダー */
+  .header-flex {
+    height: 100px;
+  }
+
+  .header-left img {
+    height: 80px;
+    object-fit: contain;
+  }
+
+  .main-nav a {
+    padding: 30px;
+    font-size: 20px;
+  }
+
+  /* トップ */
+  .top {
+    max-width: 1000px;
+    height: 325px;
+  }
+
+  .top-wrapper-textbox {
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    width: 290px;
+    height: 155px;
+    padding: 10px;
+    opacity: 0.90;
+    background: white;
+    text-align: center;
+  }
+
+  .top-wrapper-big-text {
+    font-size: 30px;
+  }
+
+  .top-wrapper-small-text {
+    font-size: 20px;
+  }
+
+  /* 当社について */
+  .about-flex {
+    gap: 10px;
+  }
+
+  .about img {
+    width: 295px;
+    height: 328px;
+  }
+
+  .about-flex-column {
+    width: 295px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+
+  /* 丸山工務店でできること */
+  .work-flex {
+    gap: 10px;
+  }
+
+  .work-unit {
+    width: 193.3px;
+  }
+
+  .work-unit-title {
+    font-size: 20px;
+  }
+
+  .work-unit-responsive img {
+    width: 193.3px;
+    height: 203px;
+    object-fit: cover;
+  }
+
+  .work-unit-text {
+    height: 108px;
+    font-size: 15px;
+  }
+
+  /* お客様の声 */
+  .voice-flex-column {
+    gap: 10px;
+  }
+
+  .voice-flex {
+    display: flex;
+    gap: 20px;
+  }
+
+  .voice-unit {
+    width: 290px;
+  }
+
+  .voice-unit-flex {
+    gap: 10px;
+  }
+
+  .voice-unit img {
+    width: 290px;
+    height: 200px;
+  }
+
+  .voice-unit-text {
+    font-size: 15px;
+    overflow-wrap: break-word;
+  }
+
+  .voice-icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 9999px;
+    object-fit: cover;
+  }
+
+  .voice-icon-text p {
+    padding-top: 15px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* 個別相談会 */
+  .consaltation-flex {
+    gap: 10px;
+  }
+
+  .consaltation-left {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .consaltation-left img {
+    width: 290px;
+    height: 180px;
+  }
+
+  .consaltation-left-text p {
+    font-size: 15px;
+  }
+
+  .consaltation-right {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .consaltation-right p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
